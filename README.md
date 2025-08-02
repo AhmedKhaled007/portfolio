@@ -79,11 +79,15 @@ To enable the contact form functionality:
 
 1. Create an account at [EmailJS](https://www.emailjs.com/)
 2. Create an email service and template
-3. Update the EmailJS credentials in `src/components/sections/ContactSection.tsx`:
-   ```typescript
-   const serviceId = 'YOUR_SERVICE_ID';
-   const templateId = 'YOUR_TEMPLATE_ID';
-   const publicKey = 'YOUR_PUBLIC_KEY';
+3. Set up environment variables:
+   ```bash
+   # Copy the example file
+   cp .env.example .env
+   
+   # Add your EmailJS credentials
+   VITE_EMAILJS_SERVICE_ID=your_service_id
+   VITE_EMAILJS_TEMPLATE_ID=your_template_id
+   VITE_EMAILJS_PUBLIC_KEY=your_public_key
    ```
 
 ## 🎨 Customization

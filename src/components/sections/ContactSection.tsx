@@ -37,11 +37,11 @@ const ContactSection: React.FC = () => {
       .email('Please enter a valid email address')
       .required('Email is required'),
     subject: Yup.string()
-      .min(5, 'Subject must be at least 5 characters')
-      .max(100, 'Subject must be less than 100 characters')
+      .min(2, 'Subject must be at least 2 characters')
+      .max(150, 'Subject must be less than 150 characters')
       .required('Subject is required'),
     message: Yup.string()
-      .min(10, 'Message must be at least 10 characters')
+      .min(5, 'Message must be at least 5 characters')
       .max(1000, 'Message must be less than 1000 characters')
       .required('Message is required'),
   });
@@ -69,10 +69,10 @@ const ContactSection: React.FC = () => {
         to_name: personalInfo.name,
       };
 
-      // Replace these with your actual EmailJS credentials
-      const serviceId = 'YOUR_SERVICE_ID';
-      const templateId = 'YOUR_TEMPLATE_ID';
-      const publicKey = 'YOUR_PUBLIC_KEY';
+      // EmailJS configuration - Update these with actual credentials after deployment
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_portfolio';
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_contact';
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'public_key_portfolio';
 
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
       

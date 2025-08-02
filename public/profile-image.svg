@@ -1,0 +1,12 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="300" fill="url(#gradient)"/>
+  <circle cx="150" cy="120" r="40" fill="white" fill-opacity="0.9"/>
+  <path d="M100 200C100 175.147 120.147 155 145 155H155C179.853 155 200 175.147 200 200V240H100V200Z" fill="white" fill-opacity="0.9"/>
+  <text x="150" y="270" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Ahmed Habiba</text>
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="300" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#667eea"/>
+      <stop offset="1" stop-color="#764ba2"/>
+    </linearGradient>
+  </defs>
+</svg>
