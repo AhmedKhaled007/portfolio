@@ -210,7 +210,7 @@ const HeroSection: React.FC = () => {
                 mt: { xs: 4, md: 0 },
               }}
             >
-              <Avatar
+              {/* <Avatar
                 sx={{
                   width: { xs: 200, md: 300 },
                   height: { xs: 200, md: 300 },
@@ -219,9 +219,15 @@ const HeroSection: React.FC = () => {
                 }}
                 src="/photo.jpg"
                 alt={personalInfo.name}
+                imgProps={{
+                  style: {
+                    objectFit: 'cover',        // How image scales: 'cover', 'contain', 'fill'
+                    objectPosition: '9% 25%' // Which part shows: 'top', 'center', 'bottom', etc.
+                  }
+                }}
               >
                 {personalInfo.name.split(' ').map(name => name[0]).join('')}
-              </Avatar>
+              </Avatar> */}
             </Box>
           </Grid>
         </Grid>

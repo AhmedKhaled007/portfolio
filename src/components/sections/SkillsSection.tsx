@@ -11,11 +11,14 @@ import {
   Avatar,
 } from '@mui/material';
 import CodeIcon from '@mui/icons-material/Code';
-import WebIcon from '@mui/icons-material/Web';
 import StorageIcon from '@mui/icons-material/Storage';
 import CloudIcon from '@mui/icons-material/Cloud';
 import SecurityIcon from '@mui/icons-material/Security';
 import SmartToyIcon from '@mui/icons-material/SmartToy';
+import DevicesIcon from '@mui/icons-material/Devices';
+import ArchitectureIcon from '@mui/icons-material/AccountTree';
+import MessageIcon from '@mui/icons-material/Message';
+import MonitorHeartIcon from '@mui/icons-material/MonitorHeart';
 import { skills } from '../../constants/data';
 
 const SkillsSection: React.FC = () => {
@@ -23,17 +26,25 @@ const SkillsSection: React.FC = () => {
 
   const getCategoryIcon = (category: string) => {
     switch (category) {
-      case 'Core Backend':
+      case 'Languages & Core':
+        return <CodeIcon />;
+      case 'Backend Frameworks':
         return <CodeIcon />;
       case 'Frontend & Mobile':
-        return <WebIcon />;
-      case 'Databases':
+        return <DevicesIcon />;
+      case 'Databases & ORMs':
         return <StorageIcon />;
-      case 'DevOps & Cloud':
+      case 'Message Queues & Event-Driven':
+        return <MessageIcon />;
+      case 'Observability & Monitoring':
+        return <MonitorHeartIcon />;
+      case 'Cloud & Infrastructure':
         return <CloudIcon />;
-      case 'Architecture & Security':
+      case 'Architecture & Design':
+        return <ArchitectureIcon />;
+      case 'Security & Authentication':
         return <SecurityIcon />;
-      case 'AI/ML & Testing':
+      case 'AI & Machine Learning':
         return <SmartToyIcon />;
       default:
         return <CodeIcon />;
@@ -42,14 +53,18 @@ const SkillsSection: React.FC = () => {
 
   const getCategoryColor = (index: number) => {
     const colors = [
-      theme.palette.primary.main,
-      theme.palette.secondary.main,
-      '#FF6B6B',
-      '#4ECDC4',
-      '#45B7D1',
-      '#96CEB4',
+      theme.palette.primary.main,    // Languages & Core - Blue/Purple
+      theme.palette.secondary.main,  // Backend Frameworks - Purple
+      '#FF6B6B',                      // Frontend & Mobile - Red
+      '#4ECDC4',                      // Databases & ORMs - Teal
+      '#F39C12',                      // Message Queues - Orange
+      '#9B59B6',                      // Observability - Purple
+      '#45B7D1',                      // Cloud & Infrastructure - Light Blue
+      '#96CEB4',                      // Architecture & Design - Green
+      '#E74C3C',                      // Security & Authentication - Dark Red
+      '#1ABC9C',                      // AI & Machine Learning - Turquoise
     ];
-    return colors[index % colors.length];
+    return colors[index];
   };
 
   return (
