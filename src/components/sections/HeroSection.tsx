@@ -5,7 +5,7 @@ import {
   Typography,
   Button,
   Grid,
-  Avatar,
+  // Avatar,
 } from '@mui/material';
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
