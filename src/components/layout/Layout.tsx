@@ -8,6 +8,7 @@ import HeroSection from '../sections/HeroSection';
 const AboutSection = React.lazy(() => import('../sections/AboutSection'));
 const SkillsSection = React.lazy(() => import('../sections/SkillsSection'));
 const ExperienceSection = React.lazy(() => import('../sections/ExperienceSection'));
+const CoursesSection = React.lazy(() => import('../sections/CoursesSection'));
 const ProjectsSection = React.lazy(() => import('../sections/ProjectsSection'));
 const ContactSection = React.lazy(() => import('../sections/ContactSection'));
 
@@ -54,6 +55,7 @@ const Layout: React.FC = () => {
           <AboutSection />
           <SkillsSection />
           <ExperienceSection />
+          <CoursesSection />
           <ProjectsSection />
           <ContactSection />
         </Suspense>

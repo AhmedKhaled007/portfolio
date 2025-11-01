@@ -26,12 +26,13 @@ const AboutSection: React.FC = () => {
   const highlights = [
     '5+ years of enterprise-grade backend development',
     'Python/FastAPI microservices specialist',
-    'Machine learning integration expert',
+    'Machine learning & computer vision integration expert',
     '10K+ requests/hour system optimization',
     '99.9% uptime achievement',
-    'Secure authentication systems (JWT, OAuth 2.0)',
-    'CI/CD pipeline implementation',
-    'Cross-functional team leadership',
+    'Secure authentication systems (OAuth2/OIDC, JWT, RBAC)',
+    'Event-driven architecture (Kafka, RabbitMQ, Celery)',
+    'CI/CD & cloud deployments (AWS, Docker, Kubernetes)',
+    'Cross-functional team collaboration in Agile sprints',
   ];
 
   const stats = [

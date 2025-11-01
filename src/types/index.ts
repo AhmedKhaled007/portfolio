@@ -41,3 +41,17 @@ export interface ContactForm {
   subject: string;
   message: string;
 }
+
+export interface Education {
+  degree: string;
+  institution: string;
+  duration: string;
+  description?: string;
+}
+
+export interface Course {
+  title: string;
+  institution: string;
+  url?: string;
+  platform?: string;
+}

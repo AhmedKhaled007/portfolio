@@ -67,15 +67,9 @@ const ProjectsSection: React.FC = () => {
               WebkitTextFillColor: 'transparent',
             }}
           >
-            Featured Projects
+            Projects
           </Typography>
-          <Typography
-            variant="h5"
-            color="text.secondary"
-            sx={{ maxWidth: '600px', mx: 'auto' }}
-          >
-            Showcasing innovative solutions and technical expertise
-          </Typography>
+
         </Box>
 
         <Grid container spacing={4}>
