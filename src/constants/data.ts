@@ -3,9 +3,9 @@ import { PersonalInfo, SkillCategory, Experience, Project } from '../types';
 export const personalInfo: PersonalInfo = {
   name: "Ahmed Khaled Habiba",
   title: "Senior Software Engineer",
-  location: "Remote • Egypt",
+  location: "Remote • Saudi Arabia",
   email: "ahmedk4720@gmail.com",
-  phone: "+20 1114447720",
+  phone: "+966 556093635",
   github: "https://github.com/AhmedKhaled007",
   domain: "ahmedhabiba.dev"
 };
