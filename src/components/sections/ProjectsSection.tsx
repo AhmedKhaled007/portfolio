@@ -24,12 +24,13 @@ const ProjectsSection: React.FC = () => {
   const theme = useTheme();
 
   const getProjectIcon = (title: string) => {
-    if (title.toLowerCase().includes('microservices')) {
+    const LowerTitle = title.toLowerCase();
+    if (LowerTitle.includes('ai') || LowerTitle.includes('agentic')) {
       return <ApiIcon sx={{ fontSize: '2rem' }} />;
-    } else if (title.toLowerCase().includes('authentication')) {
-      return <CodeIcon sx={{ fontSize: '2rem' }} />;
-    } else if (title.toLowerCase().includes('dashboard')) {
+    } else if (LowerTitle.includes('time') || LowerTitle.includes('task') || LowerTitle.includes('management')) {
       return <DashboardIcon sx={{ fontSize: '2rem' }} />;
+    } else if (LowerTitle.includes('zakat') || LowerTitle.includes('app') || LowerTitle.includes('mobile')) {
+      return <CodeIcon sx={{ fontSize: '2rem' }} />;
     }
     return <CodeIcon sx={{ fontSize: '2rem' }} />;
   };
@@ -266,7 +267,7 @@ const ProjectsSection: React.FC = () => {
             color="text.secondary"
             sx={{ mb: 3, maxWidth: '600px', mx: 'auto' }}
           >
-            Explore my complete portfolio of projects, including open-source contributions, 
+            Explore my complete portfolio of projects, including open-source contributions,
             experimental code, and collaborative works on my GitHub profile.
           </Typography>
           <Button

@@ -4,13 +4,13 @@ export const personalInfo: PersonalInfo = {
   name: "Ahmed Khaled Habiba",
   title: "Senior Software Engineer",
   location: "Saudi Arabia",
-  email: "ahmedk4720@gmail.com",
+  email: "contact@ahmedhabiba.dev",
   phone: "+966 556093635",
   github: "https://github.com/AhmedKhaled007",
   domain: "ahmedhabiba.dev"
 };
 
-export const professionalSummary = "Senior Backend Engineer (Python) with 5+ years building and operating scalable, secure microservices and APIs. Deep experience with FastAPI/Django, event-driven systems, and cloud deployments. Strong in authentication/authorization (OAuth2/OIDC, JWT, RBAC), CI/CD (GitHub Actions), observability (Prometheus/Grafana, Sentry), and rigorous testing (pytest, integration tests, load testing). Comfortable collaborating across product and ML teams; integrated and served computer-vision models in production.";
+export const professionalSummary = "Senior Backend Engineer specializing in Python and Agentic AI, with 5+ years building scalable microservices and Model Context Protocol (MCP) implementations. Expert in FastAPI/Django, event-driven architectures, and production-grade AI systems. Strong foundation in security (OAuth2/OIDC), observability, and CI/CD, with a proven track record of integrating complex AI solutions into enterprise ecosystems.";
 
 export const skills: SkillCategory[] = [
   {
@@ -51,7 +51,7 @@ export const skills: SkillCategory[] = [
   },
   {
     category: "AI & Machine Learning",
-    skills: ["Fine-tuning ML models", "Computer Vision", "AI Analysis"]
+    skills: ["Fine-tuning ML models", "Computer Vision", "Agentic AI", "MCP", "AI Analysis"]
   }
 ];
 
@@ -99,7 +99,24 @@ export const experiences: Experience[] = [
 ];
 
 export const projects: Project[] = [
-
+  {
+    title: "Salla AI Assistant",
+    description: "An advanced Agentic AI solution utilizing the Model Context Protocol (MCP) to provide a conversational interface for Salla store management. Enables merchants to update products, track complex order states, and perform store analysis through natural language.",
+    technologies: ["Python", "FastAPI", "MCP", "LangChain", "OpenAI"],
+    github: "https://github.com/AhmedKhaled007/salla-ai-assistant",
+  },
+  {
+    title: "Time Management System",
+    description: "A robust full-stack productivity suite built with FastAPI and React. Features complex task scheduling, time tracking analytics, and a responsive interface designed for high-efficiency workflow management.",
+    technologies: ["FastAPI", "React", "TypeScript", "PostgreSQL", "Docker"],
+    github: "https://github.com/AhmedKhaled007/Time-Mangament",
+  },
+  {
+    title: "Zakat App",
+    description: "A specialized cross-platform mobile application developed with React Native and Expo. Simplifies the calculation and management of Zakat obligations with a focus on privacy, accuracy, and user-centric design for the global Muslim community.",
+    technologies: ["React Native", "Expo", "TypeScript", "Context API", "Native Device Storage"],
+    github: "https://github.com/AhmedKhaled007/Zakat-app",
+  },
 ];
 
 export const education: Education[] = [
